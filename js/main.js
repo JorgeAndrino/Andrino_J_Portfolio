@@ -26,7 +26,7 @@
 
 
   nameSwap=(data)=>{
-    if (imageBox.src.match("cho")){
+    if (imageBox.src.match("")){
       idx=0;
     }else{
       idx=1;
@@ -34,19 +34,19 @@
     name.innerText=data.arrName[idx];
   }
   textSwap=(data)=>{
-    if (imageBox.src.match("cho1")){
+    if (imageBox.src.match("")){
       idx=0;
     }
-    if (imageBox.src.match("cho2")){
+    if (imageBox.src.match("")){
       idx=1;
     }
-    if (imageBox.src.match("andrino1")){
+    if (imageBox.src.match("")){
       idx=2;
     }
-    if (imageBox.src.match("andrino2")){
+    if (imageBox.src.match("")){
       idx=3;
     }
-    if (imageBox.src.match("andrino3")){
+    if (imageBox.src.match("")){
       idx=4;
     }
     
