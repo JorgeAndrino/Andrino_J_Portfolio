@@ -91,3 +91,9 @@ close.addEventListener("click",closeBtn,false);
 lightBox.addEventListener("click",closeClick,false);
 leftBtn.addEventListener("click",() => { prev(portfolioData);},false);
 rightBtn.addEventListener("click",() => { next(portfolioData);},false);
+
+
+
+
+
+
