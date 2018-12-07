@@ -113,23 +113,18 @@
     <h2>Gallery</h2>
   </div>
 
-  <div class="overlay">
-    <div class="bigPicture">
-      <img class="pictureBig" src="dataPhoto" />
-      <p class="photoTitle"></p>
-    </div>
-    <span class="close">X</span>
+  <div class="small-offset-2 small-8 medium-offset-2 medium-8 large-offset-2 large-8 cell gallery">
+      <div v-for="item in projectdata">
+          <a :href="item.project"><img class="pics" :src="'images/' + item.project"></a>
+      </div>
+      <!-- <a :href="item.project"><img class="pics" :src="'images/' + item.project"></a> -->
+
+    <!-- <a href="images/in_it_to_win_it.png"><img class="pics" src="images/in_it_to_win_it.png"></a>
+    <a href="images/dont_go_deeper.svg"><img class="pics" src="images/dont_go_deeper.svg"></a>
+    <a href="images/killer_looks.svg"><img class="pics" src="images/killer_looks.svg"></a>
+    <a href="images/small_universe.svg"><img class="pics" src="images/small_universe.svg"></a>
+    <a href="images/beauty_in_a_bottle.svg"><img class="pics" src="images/beauty_in_a_bottle.svg"></a> -->
   </div>
-
-<div class="small-offset-2 small-8 medium-offset-2 medium-8 large-offset-2 large-8 cell gallery" id="projects">
-  <a href="images/in_it_to_win_it.svg"><img class="pics" src="images/in_it_to_win_it.png"></a>
-  <a href="images/dont_go_deeper.svg"><img class="pics" src="images/dont_go_deeper.svg"></a>
-  <a href="images/killer_looks.svg"><img class="pics" src="images/killer_looks.svg"></a>
-  <a href="images/small_universe.svg"><img class="pics" src="images/small_universe.svg"></a>
-  <a href="images/beauty_in_a_bottle.svg"><img class="pics" src="images/beauty_in_a_bottle.svg"></a>
-
-</div>
-  
 
 </div>
 </div>
@@ -140,10 +135,15 @@
 <div class="grid-x grid-container video-container">
   <div class="small-offset-1 small-10 medium-offset-1 medium-10 large-offset-1 large-10 cell video-header">
     <h2>Video Reel</h2>
-  </div>
-  <video src="#"></video>
-  <div class="small-offset-1 small-10 medium-offset-1 medium-10 large-offset-1 large-10 cell video"><p class="boxHelper">video reel</p></div>
 
+    <video class="small-10 medium-10 large-10 cell" controls>
+      <source src="video/video.mp4" type="video/mp4">
+      <source src="video/video.ogg" type="video/ogg">
+      <source src="video/video.webm" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
 </div>
 </div>
 <!--end video container-->

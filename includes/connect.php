@@ -2,20 +2,14 @@
 
 $host = 'localhost';
 $user = 'root';
-$password = 'root';
+$pw = 'root';
 $db = 'db_portfolio';
 
-$conn = mysqli_connect($host, $username, $password, $db);
-
-if(!$conn){
-    echo "Error!";
-    exit;
+try {
+    $conn = new PDO('mysql:host=localhost;dbname=db_portfolio', $user, $pw);
+    //var_dump($conn);
+} catch(PDOException $exception) {
+    echo 'connect error!' . $exception->getMessage();
 }
-
-$query="SELECT project FROM tbl_gallery WHERE ID='1' ";
-$query=mysql_query($conn,$query);
- 
-$image=mysqli_fetch_array($query);
-
 ?>
 
